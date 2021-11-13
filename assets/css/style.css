@@ -12087,6 +12087,10 @@ fieldset:disabled .btn {
   color: #fff;
 }
 
+nav.navbar {
+  z-index: 9999;
+}
+
 .navbar-brand {
   max-width: 110px;
 }
