@@ -198,6 +198,20 @@ nav {
   }
 }
 
+#home--banners{
+  .banner-box{
+    position: relative;
+    p{
+      position: absolute;
+      left: 0;
+      width: 100%;
+      bottom: 0;
+      background-color: rgba(#000, 0.4);
+      margin-bottom: 0;
+    }
+  }
+}
+
 #topCities {
   .city-box {
     border-radius: 5px;
