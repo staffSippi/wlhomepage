@@ -1,6 +1,6 @@
 $(document).ready(function () {
   //   var siteDomain = window.location.hostname;
-    var siteDomain = "packagecart.in";
+    // var siteDomain = "packagecart.in";
 
   let locationSearchAjax = {
     url: `http://${siteDomain}/flightApi/api/getAirports`,
