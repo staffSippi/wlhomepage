@@ -12253,6 +12253,10 @@ nav li.nav-item .nav-link.active:after {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
   margin-bottom: 0;
+  font-size: 17px;
+  text-align: center;
+  padding: 4px 20px;
+  color: #ffffff;
 }
 
 #topCities .city-box {
