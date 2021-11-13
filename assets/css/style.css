@@ -12091,6 +12091,14 @@ nav.navbar {
   z-index: 99999;
 }
 
+nav.bg-dark {
+  background-color: rgba(17, 17, 17, 0.851) !important;
+}
+
+nav.bg-transparent {
+  background-color: rgba(17, 17, 17, 0.851) !important;
+}
+
 .navbar-brand {
   max-width: 110px;
 }
