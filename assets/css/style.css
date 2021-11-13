@@ -12030,18 +12030,19 @@ fieldset:disabled .btn {
 :root {
   --bs-primary: #029acf !important;
   --bs-primary-rgb: rgb(2, 154, 207) !important;
+  --bs-secondary: #ff6c2d;
 }
 
 .bg-primary {
-  background-color: #029acf !important;
+  background-color: var(--bs-primary) !important;
 }
 
 .bg-secondary {
-  background-color: #ff6c2d !important;
+  background-color: var(--bs-secondary) !important;
 }
 
 .btn-primary {
-  background-color: #029acf !important;
+  background-color: var(--bs-primary) !important;
 }
 
 .btn-primary:hover {
@@ -12049,7 +12050,7 @@ fieldset:disabled .btn {
 }
 
 .btn-secondary {
-  background-color: #ff6c2d !important;
+  background-color: var(--bs-secondary) !important;
 }
 
 .btn-secondary:hover {
@@ -12113,11 +12114,12 @@ nav li.nav-item .nav-link.active:after {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 10px;
+  bottom: 0px;
   content: "";
   display: block;
-  width: 70px;
+  width: 40px;
   height: 2px;
+  background: var(--bs-secondary);
 }
 
 .navbar-brand {
@@ -12227,7 +12229,7 @@ nav li.nav-item .nav-link.active:after {
   content: "";
   width: 100px;
   height: 5px;
-  background-color: #ff6c2d;
+  background-color: var(--bs-secondary);
   display: block;
   margin: 0 auto;
   -webkit-transform: translateX(-50%);
@@ -12266,7 +12268,7 @@ nav li.nav-item .nav-link.active:after {
   content: "";
   width: 40px;
   height: 3px;
-  background-color: #ff6c2d;
+  background-color: var(--bs-secondary);
   display: block;
   margin: 0 auto;
   -webkit-transform: translateX(-50%);
@@ -12347,7 +12349,7 @@ nav li.nav-item .nav-link.active:after {
   content: "";
   width: 40px;
   height: 3px;
-  background-color: #ff6c2d;
+  background-color: var(--bs-secondary);
   display: block;
   margin: 0 auto;
   -webkit-transform: translateX(-50%);
