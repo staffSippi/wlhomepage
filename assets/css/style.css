@@ -12180,10 +12180,9 @@ fieldset:disabled .btn {
 #home--top .content-section h2:after, #home--top .content-section .h2:after {
   position: absolute;
   left: 50px;
-  bottom: -5px;
+  bottom: -22px;
   content: "";
   width: 100px;
-  top: 70px;
   height: 5px;
   background-color: #ff6c2d;
   display: block;
