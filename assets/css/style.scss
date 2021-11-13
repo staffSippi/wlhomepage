@@ -59,6 +59,10 @@
   }
 }
 
+.navbar-brand{
+  max-width: 110px;
+}
+
 .select2-container--default {
   .select2-selection--single {
     height: 50px;
@@ -269,6 +273,10 @@
     }
     .cities {
       margin-bottom: 10px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding: 0 15px;
+      overflow: hidden;
     }
     .price {
       font-size: 24px;
