@@ -12096,7 +12096,7 @@ nav.bg-dark {
 }
 
 nav.bg-transparent {
-  background-color: rgba(17, 17, 17, 0.851) !important;
+  background-color: transparent !important;
 }
 
 .navbar-brand {
