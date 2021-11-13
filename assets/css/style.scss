@@ -73,7 +73,7 @@ nav {
   li.nav-item {
     padding-left: 7px;
     padding-right: 7px;
-    &.nav-link.active{
+    .nav-link.active{
       position: relative;
       &:after{
         position: absolute;

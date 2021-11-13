@@ -12104,11 +12104,11 @@ nav li.nav-item {
   padding-right: 7px;
 }
 
-nav li.nav-item.nav-link.active {
+nav li.nav-item .nav-link.active {
   position: relative;
 }
 
-nav li.nav-item.nav-link.active:after {
+nav li.nav-item .nav-link.active:after {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
