@@ -12099,6 +12099,27 @@ nav.bg-transparent {
   background-color: transparent !important;
 }
 
+nav li.nav-item {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+nav li.nav-item.nav-link.active {
+  position: relative;
+}
+
+nav li.nav-item.nav-link.active:after {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 10px;
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+}
+
 .navbar-brand {
   max-width: 110px;
 }

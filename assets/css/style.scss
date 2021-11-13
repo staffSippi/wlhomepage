@@ -69,6 +69,24 @@ nav {
   &.bg-transparent {
     background-color: transparent !important;
   }
+
+  li.nav-item {
+    padding-left: 7px;
+    padding-right: 7px;
+    &.nav-link.active{
+      position: relative;
+      &:after{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10px;
+        content: "";
+        display: block;
+        width: 70px;
+        height: 2px;
+      }
+    }
+  }
 }
 
 .navbar-brand {
