@@ -12098,6 +12098,8 @@ nav.bg-dark {
 
 nav.bg-transparent {
   background-color: transparent !important;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
 }
 
 nav li.nav-item {

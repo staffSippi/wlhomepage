@@ -69,6 +69,7 @@ nav {
   }
   &.bg-transparent {
     background-color: transparent !important;
+    transition: 0.7s ease;
   }
 
   li.nav-item {
