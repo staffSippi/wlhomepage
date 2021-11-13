@@ -75,7 +75,7 @@ $(document).ready(function () {
 
   $(document).on("scroll", function () {
     console.log("Scrolled");
-    $("nav.navbar").toggleClass("navbar-transparent", $(document).scrollTop() >= 50);
+    $("nav.navbar").toggleClass("bg-transparent", $(document).scrollTop() <= 50);
   });
 
   $(document).on("click", ".add", function () {
