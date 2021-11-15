@@ -12042,11 +12042,11 @@ fieldset:disabled .btn {
 }
 
 .text-primary {
-  background-color: var(--bs-primary) !important;
+  color: var(--bs-primary) !important;
 }
 
 .text-secondary {
-  background-color: var(--bs-secondary) !important;
+  color: var(--bs-secondary) !important;
 }
 
 .btn-primary {
