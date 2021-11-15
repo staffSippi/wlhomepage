@@ -12304,6 +12304,10 @@ nav li.nav-item .nav-link.active:after {
   position: relative;
 }
 
+.tour-package-item .image img {
+  width: 100%;
+}
+
 .tour-package-item .image .duration-tag {
   position: absolute;
   left: 10px;

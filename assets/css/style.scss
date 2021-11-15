@@ -256,6 +256,9 @@ nav {
   overflow: hidden;
   .image {
     position: relative;
+    img{
+      width: 100%;
+    }
     .duration-tag {
       position: absolute;
       left: 10px;
