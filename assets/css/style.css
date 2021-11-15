@@ -12028,8 +12028,8 @@ fieldset:disabled .btn {
 }
 
 :root {
-  --bs-primary: #029acf !important;
-  --bs-primary-rgb: rgb(2, 154, 207) !important;
+  --bs-primary: #029acf;
+  --bs-primary-rgb: rgb(2, 154, 207);
   --bs-secondary: #ff6c2d;
 }
 
