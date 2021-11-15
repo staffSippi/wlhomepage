@@ -1,10 +1,15 @@
 $(document).ready(function () {
   //   var siteDomain = window.location.hostname;
-    // var siteDomain = "packagecart.in";
+  // var siteDomain = "packagecart.in";
 
   const root = document.documentElement;
-  root?.style.setProperty("--bs-primary", "#262833");
-  root?.style.setProperty("--bs-secondary", "green");
+
+  if (themePrimaryColor) {
+    root?.style.setProperty("--bs-primary", themePrimaryColor);
+  }
+  if (themeSecondaryColor) {
+    root?.style.setProperty("--bs-secondary", themeSecondaryColor);
+  }
 
   let locationSearchAjax = {
     url: `http://${siteDomain}/flightApi/api/getAirports`,
@@ -79,7 +84,10 @@ $(document).ready(function () {
 
   $(document).on("scroll", function () {
     console.log("Scrolled");
-    $("nav.navbar").toggleClass("bg-transparent", $(document).scrollTop() <= 50);
+    $("nav.navbar").toggleClass(
+      "bg-transparent",
+      $(document).scrollTop() <= 50
+    );
   });
 
   $(document).on("click", ".add", function () {
