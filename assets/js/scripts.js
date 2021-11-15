@@ -2,6 +2,10 @@ $(document).ready(function () {
   //   var siteDomain = window.location.hostname;
     // var siteDomain = "packagecart.in";
 
+  const root = document.documentElement;
+  root?.style.setProperty("--bs-primary", "#262833");
+  root?.style.setProperty("--bs-secondary", "green");
+
   let locationSearchAjax = {
     url: `http://${siteDomain}/flightApi/api/getAirports`,
     method: "POST",
