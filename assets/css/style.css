@@ -12298,6 +12298,7 @@ nav li.nav-item .nav-link.active:after {
   text-align: center;
   border-radius: 5px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .tour-package-item .image {
