@@ -12246,6 +12246,7 @@ nav li.nav-item .nav-link.active:after {
 
 #home--banners .banner-box {
   position: relative;
+  margin-bottom: 20px;
 }
 
 #home--banners .banner-box p {
@@ -12265,6 +12266,8 @@ nav li.nav-item .nav-link.active:after {
   border-radius: 5px;
   overflow: hidden;
   background-color: #fff;
+  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 #topCities .city-box img {
