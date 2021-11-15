@@ -12267,6 +12267,10 @@ nav li.nav-item .nav-link.active:after {
   background-color: #fff;
 }
 
+#topCities .city-box img {
+  width: 100%;
+}
+
 #topCities .city-box .desc {
   padding: 10px 15px;
 }
