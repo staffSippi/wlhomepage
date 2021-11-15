@@ -12029,6 +12029,7 @@ fieldset:disabled .btn {
 
 :root {
   --bs-primary: #029acf;
+  --bs-primary-rgb: rgb(2, 154, 207);
   --bs-secondary: #ff6c2d;
 }
 
@@ -12040,12 +12041,20 @@ fieldset:disabled .btn {
   background-color: var(--bs-secondary) !important;
 }
 
+.text-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+.text-secondary {
+  background-color: var(--bs-secondary) !important;
+}
+
 .btn-primary {
   background-color: var(--bs-primary) !important;
 }
 
 .btn-primary:hover {
-  background-color: #007eac !important;
+  background-color: var(--bs-primary) !important;
 }
 
 .btn-secondary {
@@ -12053,7 +12062,7 @@ fieldset:disabled .btn {
 }
 
 .btn-secondary:hover {
-  background-color: #ce531f !important;
+  background-color: var(--bs-secondary) !important;
 }
 
 .bg-light-grey {

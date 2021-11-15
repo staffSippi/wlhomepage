@@ -5,7 +5,7 @@
 
 :root {
   --bs-primary: #029acf;
-  // --bs-primary-rgb: rgb(2, 154, 207);
+  --bs-primary-rgb: rgb(2, 154, 207);
   --bs-secondary: #ff6c2d;
 }
 
@@ -15,17 +15,27 @@
 .bg-secondary {
   background-color: var(--bs-secondary) !important;
 }
+.text-primary {
+  background-color: var(--bs-primary) !important;
+}
+.text-secondary {
+  background-color: var(--bs-secondary) !important;
+}
 
 .btn-primary {
   background-color: var(--bs-primary) !important;
   &:hover {
-    background-color: #007eac !important;
+    background-color: var(--bs-primary) !important;
   }
+}
+
+.text-secondary{
+
 }
 .btn-secondary {
   background-color: var(--bs-secondary) !important;
   &:hover {
-    background-color: #ce531f !important;
+    background-color: var(--bs-secondary) !important;
   }
 }
 .bg-light-grey {
