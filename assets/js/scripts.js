@@ -1,6 +1,4 @@
 $(document).ready(function () {
-  //   var siteDomain = window.location.hostname;
-  // var siteDomain = "packagecart.in";
 
   const root = document.documentElement;
 
@@ -12,11 +10,10 @@ $(document).ready(function () {
   }
 
   let locationSearchAjax = {
-    url: `http://${siteDomain}/flightApi/api/getAirports`,
+    url: `${window.location.protocol}://${siteDomain}/flightApi/api/getAirports`,
     method: "POST",
     headers: {
       // "auth-token": "1234",
-
       "site-id": siteId,
     },
     dataType: "json",
