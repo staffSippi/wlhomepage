@@ -10,7 +10,7 @@ $(document).ready(function () {
   }
 
   let locationSearchAjax = {
-    url: `${window.location.protocol}://${siteDomain}/flightApi/api/getAirports`,
+    url: `${window.location.protocol}//${siteDomain}/flightApi/api/getAirports`,
     method: "POST",
     headers: {
       // "auth-token": "1234",
