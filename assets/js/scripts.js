@@ -45,6 +45,8 @@ $(document).ready(function () {
     },
   };
 
+  console.log(localStorage.getItem("auth-token"));
+
   function calculatePassengerCount() {
     var adultCount = $(".popover .adultCount").val();
     var childrenCount = $(".popover .childrenCount").val();
