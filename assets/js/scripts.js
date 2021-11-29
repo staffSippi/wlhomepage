@@ -48,9 +48,7 @@ $(document).ready(function () {
   if(localStorage.getItem('auth-token')){
     // console.log(localStorage.getItem("auth-token"));
     $(".authMode").show();
-    alert("You are logged in");
   }else{
-    alert("Please login to continue");
     $(".guestMode").show();  
   }
 
