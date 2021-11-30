@@ -63,6 +63,10 @@ $(document).ready(function () {
       //   `${adultCount} <i class="fas fa-user-tie"></i>, ${childrenCount} <i class="fas fa-child"></i>, ${infantCount} <i class="fas fa-baby-carriage"></i>`
       `${adultCount} Adult(s), ${childrenCount} Child, ${infantCount} Infant`
     );
+
+    $("input[name='adult']").val(adultCount);
+    $("input[name='children']").val(childrenCount);
+    $("input[name='infant']").val(infantCount);
   }
 
   $(".origin-select2").select2({
