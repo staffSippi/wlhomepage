@@ -12140,6 +12140,10 @@ nav li.nav-item .nav-link.active:after {
   background: var(--bs-secondary);
 }
 
+#passengerSelectModal .modal-dialog {
+  max-width: 230px;
+}
+
 .navbar-brand {
   max-width: 110px;
 }
