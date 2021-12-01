@@ -84,7 +84,7 @@ $(document).ready(function () {
     title: "Select Passengers",
     sanitize: false,
     html: true,
-    placement: "bottom",
+    // placement: "bottom",
     content() {
       return $("#passengerPopoverContent").html();
     },
