@@ -12061,6 +12061,10 @@ fieldset:disabled .btn {
   z-index: 9999;
 }
 
+.modal {
+  z-index: 99999;
+}
+
 .btn-secondary {
   background-color: var(--bs-secondary) !important;
 }
