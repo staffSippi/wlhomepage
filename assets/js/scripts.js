@@ -58,12 +58,19 @@ $(document).ready(function () {
   })
 
   function calculatePassengerCount() {
-    var adultCount = $(".popover .adultCount").val();
-    var childrenCount = $(".popover .childrenCount").val();
-    var infantCount = $(".popover .infantCount").val();
-    // alert("Hi");
-    // alert(adultCount);
-
+    
+    var adultCount = 1;
+    var childrenCount = 0;
+    var infantCount = 0;
+    if($('#passengerSelectModal').length){
+      adultCount = $("#passengerSelectModal .adultCount").val()
+      childrenCount = $("#passengerSelectModal .childrenCount").val()
+      infantCount = $("#passengerSelectModal .infantCount").val()
+    }else{
+      adultCount = $(".popover .adultCount").val()
+      childrenCount = $(".popover .childrenCount").val()
+      infantCount = $(".popover .infantCount").val()
+    }
     $("#passengerCount").html(
       //   `${adultCount} <i class="fas fa-user-tie"></i>, ${childrenCount} <i class="fas fa-child"></i>, ${infantCount} <i class="fas fa-baby-carriage"></i>`
       `${adultCount} Adult(s), ${childrenCount} Child, ${infantCount} Infant`
