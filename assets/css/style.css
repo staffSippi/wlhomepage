@@ -12198,7 +12198,7 @@ nav li.nav-item .nav-link.active:after {
 #home--top .flight-search,
 #home--top .content-section {
   position: relative;
-  z-index: 9999;
+  z-index: 99;
   color: #fff;
 }
 
