@@ -52,6 +52,10 @@ $(document).ready(function () {
     $(".guestMode").show();  
   }
 
+  $("#passengerCount").on("click", function(){
+    $("#passengerSelectModal").modal("show");
+  })
+
   function calculatePassengerCount() {
     var adultCount = $(".popover .adultCount").val();
     var childrenCount = $(".popover .childrenCount").val();
@@ -77,6 +81,8 @@ $(document).ready(function () {
     ajax: locationSearchAjax,
     placeholder: "Destination",
   });
+
+
 
   new bootstrap.Popover(document.querySelector(".pax-popover"), {
     trigger: "click",
