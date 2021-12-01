@@ -71,6 +71,7 @@ $(document).ready(function () {
       childrenCount = $(".popover .childrenCount").val()
       infantCount = $(".popover .infantCount").val()
     }
+    console.log({adultCount});
     $("#passengerCount").html(
       //   `${adultCount} <i class="fas fa-user-tie"></i>, ${childrenCount} <i class="fas fa-child"></i>, ${infantCount} <i class="fas fa-baby-carriage"></i>`
       `${adultCount} Adult(s), ${childrenCount} Child, ${infantCount} Infant`
