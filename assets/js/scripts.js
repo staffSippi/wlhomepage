@@ -93,17 +93,19 @@ $(document).ready(function () {
 
 
 
-  // new bootstrap.Popover(document.querySelector(".pax-popover"), {
-  //   trigger: "click",
-  //   container: "body",
-  //   title: "Select Passengers",
-  //   sanitize: false,
-  //   html: true,
-  //   // placement: "bottom",
-  //   content() {
-  //     return $("#passengerPopoverContent").html();
-  //   },
-  // });
+  if($("#passengerSelectModal").length < 1){
+    new bootstrap.Popover(document.querySelector(".pax-popover"), {
+      trigger: "click",
+      container: "body",
+      title: "Select Passengers",
+      sanitize: false,
+      html: true,
+      // placement: "bottom",
+      content() {
+        return $("#passengerPopoverContent").html();
+      },
+    });
+  }
 
   $(document).on("scroll", function () {
     console.log("Scrolled");
