@@ -53,6 +53,7 @@ $(document).ready(function () {
   }
 
   $("#passengerCount").on("click", function(){
+    $("#passengerSelectModal .modal-body").html($("#passengerPopoverContent").html())
     $("#passengerSelectModal").modal("show");
   })
 
