@@ -12142,6 +12142,8 @@ nav li.nav-item .nav-link.active:after {
 
 #passengerSelectModal .modal-dialog {
   max-width: 230px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navbar-brand {
