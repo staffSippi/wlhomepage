@@ -128,7 +128,7 @@ $(document).ready(function () {
         minPaxCount = 0;
       }
 
-      if ($(this).next().val() > minPaxCount) {
+      if ($(this).next().val() >= minPaxCount) {
         $(this).next().attr("value", newValue).val(newValue);
       }
     }
