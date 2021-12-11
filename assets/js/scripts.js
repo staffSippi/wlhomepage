@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
   const root = document.documentElement;
 
   if (themePrimaryColor) {
@@ -45,33 +44,34 @@ $(document).ready(function () {
     },
   };
 
-  if(localStorage.getItem('auth-token')){
+  if (localStorage.getItem("auth-token")) {
     // console.log(localStorage.getItem("auth-token"));
     $(".authMode").show();
-  }else{
-    $(".guestMode").show();  
+  } else {
+    $(".guestMode").show();
   }
 
-  $("#passengerCount").on("click", function(){
-    $("#passengerSelectModal .modal-body").html($("#passengerPopoverContent").html())
+  $("#passengerCount").on("click", function () {
+    $("#passengerSelectModal .modal-body").html(
+      $("#passengerPopoverContent").html()
+    );
     $("#passengerSelectModal").modal("show");
-  })
+  });
 
   function calculatePassengerCount() {
-    
     var adultCount = 1;
     var childrenCount = 0;
     var infantCount = 0;
-    if($('#passengerSelectModal').length){
-      adultCount = $("#passengerSelectModal .adultCount").val()
-      childrenCount = $("#passengerSelectModal .childrenCount").val()
-      infantCount = $("#passengerSelectModal .infantCount").val()
-    }else{
-      adultCount = $(".popover .adultCount").val()
-      childrenCount = $(".popover .childrenCount").val()
-      infantCount = $(".popover .infantCount").val()
+    if ($("#passengerSelectModal").length) {
+      adultCount = $("#passengerSelectModal .adultCount").val();
+      childrenCount = $("#passengerSelectModal .childrenCount").val();
+      infantCount = $("#passengerSelectModal .infantCount").val();
+    } else {
+      adultCount = $(".popover .adultCount").val();
+      childrenCount = $(".popover .childrenCount").val();
+      infantCount = $(".popover .infantCount").val();
     }
-    console.log({adultCount});
+    console.log({ adultCount });
     $("#passengerCount").html(
       //   `${adultCount} <i class="fas fa-user-tie"></i>, ${childrenCount} <i class="fas fa-child"></i>, ${infantCount} <i class="fas fa-baby-carriage"></i>`
       `${adultCount} Adult(s), ${childrenCount} Child, ${infantCount} Infant`
@@ -91,9 +91,7 @@ $(document).ready(function () {
     placeholder: "Destination",
   });
 
-
-
-  if($("#passengerSelectModal").length < 1){
+  if ($("#passengerSelectModal").length < 1) {
     new bootstrap.Popover(document.querySelector(".pax-popover"), {
       trigger: "click",
       container: "body",
@@ -125,7 +123,12 @@ $(document).ready(function () {
   $(document).on("click", ".sub", function () {
     if ($(this).next().val() > 1) {
       var newValue = +$(this).next().val() - 1;
-      if ($(this).next().val() > 1) {
+      let minPaxCount = 1;
+      if ($(this).next().attr("name") !== "adult") {
+        minPaxCount = 0;
+      }
+
+      if ($(this).next().val() > minPaxCount) {
         $(this).next().attr("value", newValue).val(newValue);
       }
     }
