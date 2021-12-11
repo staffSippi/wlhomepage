@@ -121,7 +121,7 @@ $(document).ready(function () {
     calculatePassengerCount();
   });
   $(document).on("click", ".sub", function () {
-    if ($(this).next().val() > 1) {
+    if ($(this).next().val() > 0) {
       var newValue = +$(this).next().val() - 1;
       let minPaxCount = 1;
       if ($(this).next().attr("name") !== "adult") {
